@@ -1,10 +1,10 @@
 import './App.css';
 import Likes from './Likes';
-import store from './redux/store'
+import Title from './title';
+
 
 function App() {
 
-  console.log("store", store)
 
   return (
     <div className="App">
@@ -12,7 +12,8 @@ function App() {
         <div className="card">
           <div className="card-image">
             <img src="./sea.jpg" alt="surfing" />
-            <Likes store={store} />
+            <Title />
+            <Likes />
           </div>
         </div>
       </div>
